@@ -1,0 +1,36 @@
+//let x=1;
+//console.log('informatica'.substring(0,6))
+//for(let i=0; i<10; i++){
+  //  console.log(i)
+//}
+//let twice=function(n){
+  //  return 2 *n;
+//}
+//let x=4
+//let r= twice(x);
+//console.log(r)
+//console.log(twice)
+//nomefun(par1,par2,parn)
+//function twice(n){ //é elevada (hoisting)
+  // return 2 * n;
+//}
+
+
+
+let twice = function(n){
+    console.log(typeof(n),n)
+    if(typeof(n)==='number'){
+        return 2*n
+
+    }
+    if(typeof(n)==='string'){
+        return n+n
+    }
+    if(Array.isArray(n)){
+        return n.concat(n);
+    }
+}
+
+let x= [3,5]
+let r= twice(x)
+console.log(r)

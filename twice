@@ -1,0 +1,16 @@
+let twice = function(n) {
+    console.log(typeof(n),n);
+    if (typeof(n) === 'number') {
+        return 2*n;
+    }
+    if(typeof(n) === 'string') {
+        return n+n;
+    }
+    if(Array.isArray(n)) {
+        return n.concat(n);
+    }
+
+}
+let x = [3,5];
+let r = twice(x);
+console.log(r);
